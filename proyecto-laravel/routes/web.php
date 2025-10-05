@@ -12,7 +12,7 @@ Route::get('/Pruebas', function () {
 });
 
 Route::get('/animales', 'App\Http\Controllers\PruebasController@index');
-
+Route::get('/test-orm', 'App\Http\Controllers\PruebasController@testOrm');
 
 
 Route::get('/test-db', function () {

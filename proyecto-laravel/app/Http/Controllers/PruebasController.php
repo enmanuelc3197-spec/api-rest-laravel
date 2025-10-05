@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Post;
+use App\Models\Category;
 
 class PruebasController extends Controller
 {
@@ -15,5 +17,10 @@ class PruebasController extends Controller
             'animales' => $animales
         ));
     }
+
+    public function testOrm(){
+        $posts = Post::all();
+        return response()->json($posts);
+    }   
      
 }
